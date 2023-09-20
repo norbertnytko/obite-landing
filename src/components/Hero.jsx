@@ -25,7 +25,7 @@ function BackgroundIllustration(props) {
         viewBox="0 0 1026 1026"
         fill="none"
         aria-hidden="true"
-        className="absolute inset-0 h-full w-full animate-spin-slow"
+        className="absolute inset-0 w-full h-full animate-spin-slow"
       >
         <path
           d="M1025 513c0 282.77-229.23 512-512 512S1 795.77 1 513 230.23 1 513 1s512 229.23 512 512Z"
@@ -55,7 +55,7 @@ function BackgroundIllustration(props) {
         viewBox="0 0 1026 1026"
         fill="none"
         aria-hidden="true"
-        className="absolute inset-0 h-full w-full animate-spin-reverse-slower"
+        className="absolute inset-0 w-full h-full animate-spin-reverse-slower"
       >
         <path
           d="M913 513c0 220.914-179.086 400-400 400S113 733.914 113 513s179.086-400 400-400 400 179.086 400 400Z"
@@ -100,28 +100,18 @@ function PlayIcon(props) {
 
 export function Hero() {
   return (
-    <div className="overflow-hidden py-20 sm:py-32 lg:pb-32 xl:pb-36">
+    <div className="py-20 overflow-hidden sm:py-32 lg:pb-32 xl:pb-36">
       <Container>
         <div className="lg:grid lg:grid-cols-12 lg:gap-x-8 lg:gap-y-20">
-          <div className="relative z-10 mx-auto max-w-2xl lg:col-span-7 lg:max-w-none lg:pt-6 xl:col-span-6">
+          <div className="relative z-10 max-w-2xl mx-auto lg:col-span-7 lg:max-w-none lg:pt-6 xl:col-span-6">
             <h1 className="text-4xl font-medium tracking-tight text-gray-900">
-              Invest at the perfect time.
+              Craft Your Digital Identity & Keep It In Your Pocket. Literally. 
             </h1>
             <p className="mt-6 text-lg text-gray-600">
-              By leveraging insights from our network of industry insiders,
-              you’ll know exactly when to buy to maximize profit, and exactly
-              when to sell to avoid painful losses.
+              Every content creator, brand, and individual has a unique story.
+              Why scatter it across the web? Bring it all together with Obite.
+              From your latest blog post to your newest YouTube video, make it accessible from a single link.
             </p>
-            <div className="mt-8 flex flex-wrap gap-x-6 gap-y-4">
-              <AppStoreLink />
-              <Button
-                href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                variant="outline"
-              >
-                <PlayIcon className="h-6 w-6 flex-none" />
-                <span className="ml-2.5">Watch the video</span>
-              </Button>
-            </div>
           </div>
           <div className="relative mt-10 sm:mt-20 lg:col-span-5 lg:row-span-2 lg:mt-0 xl:col-span-6">
             <BackgroundIllustration className="absolute left-1/2 top-4 h-[1026px] w-[1026px] -translate-x-1/3 stroke-gray-300/70 [mask-image:linear-gradient(to_bottom,white_20%,transparent_75%)] sm:top-16 sm:-translate-x-1/2 lg:-top-16 lg:ml-12 xl:-top-14 xl:ml-0" />
@@ -130,30 +120,6 @@ export function Hero() {
                 <AppDemo />
               </PhoneFrame>
             </div>
-          </div>
-          <div className="relative -mt-4 lg:col-span-7 lg:mt-0 xl:col-span-6">
-            <p className="text-center text-sm font-semibold text-gray-900 lg:text-left">
-              As featured in
-            </p>
-            <ul
-              role="list"
-              className="mx-auto mt-8 flex max-w-xl flex-wrap justify-center gap-x-10 gap-y-8 lg:mx-0 lg:justify-start"
-            >
-              {[
-                ['Forbes', logoForbes],
-                ['TechCrunch', logoTechcrunch],
-                ['Wired', logoWired],
-                ['CNN', logoCnn, 'hidden xl:block'],
-                ['BBC', logoBbc],
-                ['CBS', logoCbs],
-                ['Fast Company', logoFastCompany],
-                ['HuffPost', logoHuffpost, 'hidden xl:block'],
-              ].map(([name, logo, className]) => (
-                <li key={name} className={clsx('flex', className)}>
-                  <Image src={logo} alt={name} className="h-8" unoptimized />
-                </li>
-              ))}
-            </ul>
           </div>
         </div>
       </Container>

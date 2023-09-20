@@ -11,8 +11,8 @@ const inter = Inter({
 
 export const metadata = {
   title: {
-    template: '%s - Pocket',
-    default: 'Pocket - Invest at the perfect time.',
+    template: '%s - Obite',
+    default: 'Obite - Invest at the perfect time.',
   },
   description:
     'By leveraging insights from our network of industry insiders, you’ll know exactly when to buy to maximize profit, and exactly when to sell to avoid painful losses.',
@@ -24,8 +24,8 @@ export default function RootLayout({ children }) {
       lang="en"
       className={clsx('h-full bg-gray-50 antialiased', inter.variable)}
     >
-      <body className="flex h-full flex-col">
-        <div className="flex min-h-full flex-col">{children}</div>
+      <body className="flex flex-col h-full">
+        <div className="flex flex-col min-h-full">{children}</div>
       </body>
     </html>
   )

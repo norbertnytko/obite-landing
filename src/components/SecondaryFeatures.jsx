@@ -4,40 +4,22 @@ import { Container } from '@/components/Container'
 
 const features = [
   {
-    name: 'Invest any amount',
+    name: 'Analytics Insights',
     description:
-      'Whether it’s $1 or $1,000,000, we can put your money to work for you.',
+      'Know your audience. Track clicks, views, and more.',
     icon: DeviceArrowIcon,
   },
   {
-    name: 'Build a balanced portfolio',
+    name: 'Simplicity at its Core',
     description:
-      'Invest in different industries to find the most opportunities to win huge.',
+      'Easy setup, intuitive design, and a user-friendly experience.',
     icon: DeviceCardsIcon,
   },
   {
-    name: 'Trade in real-time',
+    name: 'Safe & Secure',
     description:
-      'Get insider tips on big stock moves and act on them within seconds.',
-    icon: DeviceClockIcon,
-  },
-  {
-    name: 'Profit from your network',
-    description:
-      'Invite new insiders to get tips faster and beat even other Pocket users.',
-    icon: DeviceListIcon,
-  },
-  {
-    name: 'Encrypted and anonymized',
-    description:
-      'Cutting-edge security technology that even the NSA doesn’t know about keeps you hidden.',
+      'Your data and your privacy, always protected.',
     icon: DeviceLockIcon,
-  },
-  {
-    name: 'Portfolio tracking',
-    description:
-      'Watch your investments grow exponentially, leaving other investors in the dust.',
-    icon: DeviceChartIcon,
   },
 ]
 
@@ -194,9 +176,9 @@ export function SecondaryFeatures() {
       className="py-20 sm:py-32"
     >
       <Container>
-        <div className="mx-auto max-w-2xl sm:text-center">
+        <div className="max-w-2xl mx-auto sm:text-center">
           <h2 className="text-3xl font-medium tracking-tight text-gray-900">
-            Now is the time to build your portfolio.
+            Features that Make a Difference.
           </h2>
           <p className="mt-2 text-lg text-gray-600">
             With typical market returns, you have to start young to secure your
@@ -205,14 +187,14 @@ export function SecondaryFeatures() {
         </div>
         <ul
           role="list"
-          className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-6 text-sm sm:mt-20 sm:grid-cols-2 md:gap-y-10 lg:max-w-none lg:grid-cols-3"
+          className="grid max-w-2xl grid-cols-1 gap-6 mx-auto mt-16 text-sm sm:mt-20 sm:grid-cols-2 md:gap-y-10 lg:max-w-none lg:grid-cols-3"
         >
           {features.map((feature) => (
             <li
               key={feature.name}
-              className="rounded-2xl border border-gray-200 p-8"
+              className="p-8 border border-gray-200 rounded-2xl"
             >
-              <feature.icon className="h-8 w-8" />
+              <feature.icon className="w-8 h-8" />
               <h3 className="mt-6 font-semibold text-gray-900">
                 {feature.name}
               </h3>

@@ -513,8 +513,8 @@ export function PrimaryFeatures() {
             Join the Digital Revolution with Obite
           </h2>
           <p className="mt-2 text-lg text-gray-400">
-            It's time to redefine how you connect with the world.
-            Whether you're a content creator, a brand, or someone with a story to tell, Obite has got your back.
+            It is time to redefine how you connect with the world.
+            Whether you are a content creator, a brand, or someone with a story to tell, Obite has got your back.
           </p>
         </div>
       </Container>
